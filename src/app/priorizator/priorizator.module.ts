@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { PriorizatorComponent } from './priorizator/priorizator.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -10,10 +12,12 @@ import { FooterComponent } from './footer/footer.component';
   declarations: [
     PriorizatorComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MobileMenuComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    NgbCollapseModule
   ],
   exports:[
     PriorizatorComponent

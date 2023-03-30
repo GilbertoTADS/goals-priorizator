@@ -1,0 +1,15 @@
+<button
+    type="button"
+    class="btn btn-outline-primary m-1"
+    (click)="collapse()"
+    (focusout)="collapse()"
+    [attr.aria-expanded]="isCollapsed"
+    aria-controls="collapseExample"
+>
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div #content="ngbCollapse" [(ngbCollapse)]="!isCollapsed">
+    <div class="card" style="position:absolute;right:2px;">
+        <div class="card-body">No content</div>
+    </div>
+</div>
