@@ -4,12 +4,14 @@ import { NgbCollapseModule } from "@ng-bootstrap/ng-bootstrap";
 import { FooterComponent } from "./footer/footer.component";
 import { HeaderComponent } from "./header/header.component";
 import { MobileMenuComponent } from "./mobile-menu/mobile-menu.component";
+import { TextBubbleComponent } from './text-bubble/text-bubble.component';
 
 @NgModule({
     declarations: [
       HeaderComponent,
       FooterComponent,
-      MobileMenuComponent
+      MobileMenuComponent,
+      TextBubbleComponent
     ],
     imports: [
       CommonModule,
@@ -18,7 +20,8 @@ import { MobileMenuComponent } from "./mobile-menu/mobile-menu.component";
     exports:[
         HeaderComponent,
         FooterComponent,
-        MobileMenuComponent
+        MobileMenuComponent,
+        TextBubbleComponent
     ]
   })
   export class ComponentsModule { }
