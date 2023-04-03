@@ -7,5 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class TextBubbleComponent {
   @Input()message:string = '';
+  @Input() messageEmphasis:string = '';
 
 }

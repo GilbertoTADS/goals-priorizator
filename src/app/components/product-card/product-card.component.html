@@ -1,0 +1,15 @@
+<div class="container mb-3">
+    <div class="row justify-content-center">
+        <div class="col-6 col-md-3" *ngFor="let product of products">
+            <div class="card rounded-0 shadow-lg border-warning" [ngbTooltip]="product.title" style="margin:2px;">
+                <small class="d-block text-secondary border-bottom border-3"> Type: <strong>{{product.type.title | uppercase}}</strong></small>
+                <img class="card-img-top border-bottom" src="/assets/images/no-photo.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-truncate">{{ product.title }}</h5>
+                  <h6 class="text-success">{{ product.price | currency:'BRL' }}<small class="text-truncate" *ngIf="product.discount > 0"> - {{product.discount}}%OFF </small></h6>
+                  <a href="#" target="_blank" class="btn btn-warning d-block rounded-0 shadow-lg">Details</a>
+                </div>
+              </div>
+        </div>
+    </div>    
+</div>

@@ -1,0 +1,14 @@
+.d-table {
+  display: table;
+  height: 100vh;
+}
+
+.d-table .v-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+main {
+  background: url("/assets/images/confidente-guy.png") no-repeat right;
+  height: 50vh;
+}

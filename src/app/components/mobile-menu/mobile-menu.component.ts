@@ -11,4 +11,7 @@ export class MobileMenuComponent {
   collapse():void{
     this.isCollapsed = !this.isCollapsed;
   }
+  closeMenu(){
+    this.isCollapsed = false;
+  }
 }
